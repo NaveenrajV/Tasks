@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <script src="./jsFile.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="closeChat()" onsubmit = "addText()">
+    <div class="chatbox-holder">
+        <div class="chatbox">
+            <div class="chatbox-top">
+               <div class="status-name">
+                   <span class="dot"></span>
+                   <span class="name">MARK ZUCKERBERG</span>
+               </div>
+               <div class="close" onclick="closeChat()">
+                   <img src="./img/close.svg" alt="">
+               </div>
+            </div>
+            <div class="chat-messages">
+                <div class="partner">
+                    <span class="time-stamp">10:53</span>
+                    <div class="message-content">
+                           <p>Hi, Mark I made a new design for Messenger App.</p> 
+                    </div>
+                </div>
+                <div class="myself">
+                    <span class="time-stamp">10:57</span>
+                    <div class="message-content">
+                        <p>Yo!Send it to my assistant and we'll review it during the year.</p>
+                    </div>
+                </div>
+                <div class="partner">
+                    <span class="time-stamp">11:03</span>
+                    <div class="message-content">
+                        <p>But Mark..</p>
+                    </div>
+                </div>
+                <div class="myself">
+                    <span class="time-stamp">11:05</span>
+                    <div class="message-content">
+                        <p>You were blocked by the user.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <form onsubmit = "">
+            <div class="chat-input-holder">
+                <input type="text" placeholder="Enter your message" class = 'text-message'>
+                <span class="send">
+                <input type="submit" value="SEND">
+                </span>
+         </form>
+         
+
+                <!-- <input type="submit" value="SEND"> -->
+                <!-- <span class="send" onclick="addText()">SEND</span> -->
+            </div>
+
+        </div>
+    </div>
+    <div class="chat-icon">
+        <img src="./img/chat1.gif" alt="" onclick="openChat()">
+    </div>
+</body>
+</html>
